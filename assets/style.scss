@@ -1,0 +1,55 @@
+.users-list {
+    display: block;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em auto;
+
+    th { text-align: center !important; }
+
+    th,
+    td {
+            border: 1px solid #ddd;
+            padding: 0.5em 1em;
+            width: 25%;
+            text-align: left;
+
+            a,
+            button {
+                display: block;
+                width: 100% !important;
+                text-align: center;
+                margin: 0.25em auto !important;
+            }
+    }
+
+    th:first-of-type,
+    td:first-of-type { width: 5%; }
+
+    th:nth-of-type(5),
+    td:nth-of-type(5) { width: 5%; }
+
+    tr:nth-of-type(odd) { background: #fff; }
+    tr:nth-of-type(even) { background: #f9f9f9; }
+}
+
+.details-container {
+    position: absolute;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    transform: translateX(-77%);
+    padding: 1em;
+    display: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+    p {
+        margin: 0.25em 0;
+        padding: 0.25em 0;
+        border-bottom: 1px solid #eee;
+        color: #3498db;
+
+        strong { color: #333; }
+    }
+}
+.details-container.active { display: inline-block; }

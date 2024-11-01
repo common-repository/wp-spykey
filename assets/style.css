@@ -1,0 +1,54 @@
+.users-list {
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em auto; }
+  .users-list th {
+    text-align: center !important; }
+  .users-list th,
+  .users-list td {
+    border: 1px solid #ddd;
+    padding: 0.5em 1em;
+    width: 25%;
+    text-align: left; }
+    .users-list th a,
+    .users-list th button,
+    .users-list td a,
+    .users-list td button {
+      display: block;
+      width: 100% !important;
+      text-align: center;
+      margin: 0.25em auto !important; }
+  .users-list th:first-of-type,
+  .users-list td:first-of-type {
+    width: 5%; }
+  .users-list th:nth-of-type(5),
+  .users-list td:nth-of-type(5) {
+    width: 5%; }
+  .users-list tr:nth-of-type(odd) {
+    background: #fff; }
+  .users-list tr:nth-of-type(even) {
+    background: #f9f9f9; }
+
+.details-container {
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  transform: translateX(-77%);
+  padding: 1em;
+  display: none;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15); }
+  .details-container p {
+    margin: 0.25em 0;
+    padding: 0.25em 0;
+    border-bottom: 1px solid #eee;
+    color: #3498db; }
+    .details-container p strong {
+      color: #333; }
+
+.details-container.active {
+  display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
